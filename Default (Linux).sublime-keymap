@@ -1,0 +1,6 @@
+	
+[
+	{"keys": ["f10"], "command":"build", "args" :{"variant":"Building"}},
+	{"keys": ["f8"], "command":"build", "args": {"variant": "Run"}},
+	{"keys": ["f9"], "command":"build", "args": {"variant": "Run2"}}
+]
