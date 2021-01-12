@@ -1,0 +1,25 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "showoutput": "always", 
+    "suppresTaskname" : true,
+    "tasks": [
+        {
+            "label": "Build And Run",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-Wall",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "&&", "${fileBasenameNoExtension}.exe"
+            ],
+            "group": "test"
+        },
+        
+    ]
+}
+
